@@ -30,7 +30,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4Material* WCumat = new G4Material ("WCu_mat",15*g/cm3,2);
     WCumat -> AddElement(nist ->FindOrBuildElement("G4_W",0.80),1);
     WCumat ->AddElement(nist ->FindOrBuildElement("G4_Cu",0.2),1);
-    WCHAR_MAX ->
+    
 
     //World
     G4double World_binary = 2.*m;
