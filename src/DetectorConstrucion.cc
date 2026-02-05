@@ -49,12 +49,12 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
             G4double x = (i-9)*Bgo_xy;
             G4double y = (j-9)*Bgo_xy;
             G4VPhysicalVolume* PhysicalBgo =  new G4PVPlacement(0,G4ThreeVector(x,y,0),LogicalBgo,"PhysicalBgo",LogicalWorld,false,0,true);
-        }
+        
     }
 
     //MURA
     G4double p = 19;
-    
+
 
 
 
