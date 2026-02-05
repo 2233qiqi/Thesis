@@ -53,7 +53,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     }
 
     //MURA
-    G4double p = 19;
+    G4double pos = 19;
 
 
 
