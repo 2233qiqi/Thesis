@@ -67,8 +67,13 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
         bool result = false;
         for (G4int j =1 ;j<p;j++)
         {
-
+            if ((j*j)% p ==i)
+            {
+                result =  true;
+                break;
+            }
         }
+        MURA19[i]= result ?1:0;
     }
 
 
