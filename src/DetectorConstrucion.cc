@@ -96,6 +96,15 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
             {
                 val = MURA19[(mask_i*mask_j)%p];
             }
+
+            if (val==0)
+            {
+                G4double x = (i-18)*mask_xy;
+                G4double y = (j-18)*mask_xy;
+                G4VPhysicalVolume* PhysicalMaskUnit = new G4PVPlacement(0,G4ThreeVector(x.y,mask_z),LogicalMaskUnit,"PhysicalMaskUnit",LogicalWorld,false,0,true);
+
+            }
+         
         }
         
     }
