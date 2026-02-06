@@ -107,21 +107,10 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
         }
         
     }
+    
+    LogicalBgo->SetVisAttributes(new G4VisAttributes(G4Color(1.0,0.0,0.0,1.0)) );
+    LogicalMaskUnit->SetVisAttributes(new G4VisAttributes(G4Color(0.0,1.0,0.5,1.0)));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return PhysicalWorld;
 
 }
