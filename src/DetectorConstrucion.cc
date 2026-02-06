@@ -73,7 +73,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
                 break;
             }
         }
-        MURA19[i]= result ?1:0;
+        MURA19[i]= result ? 1:0;
     }
 
 
