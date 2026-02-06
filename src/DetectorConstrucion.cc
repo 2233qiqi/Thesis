@@ -62,6 +62,14 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     //MURA图案
     G4int MURA19[19];
     MURA19[0]=0;
+    for (G4int i = 1;i<p;i++)
+    {
+        bool result = false;
+        for (G4int j =1 ;j<p;j++)
+        {
+
+        }
+    }
 
 
 
