@@ -86,6 +86,16 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
         {
             G4int mask_i = i%p;
             G4int mask_j = j%p;
+
+            G4int val;
+            if (mask_i==0)
+            {
+                val = MURA19[mask_i];
+            }
+            else
+            {
+                val = MURA19[(mask_i*mask_j)%p];
+            }
         }
         
     }
