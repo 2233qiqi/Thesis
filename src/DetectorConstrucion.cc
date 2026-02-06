@@ -59,7 +59,12 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4double mask_z = 8.0*mm;
     G4double MDD = 59*mm;
 
-    
+    //MURA图案
+    G4int MURA19[19];
+    MURA19[0]=0;
+
+
+
 
 
 
