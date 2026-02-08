@@ -76,7 +76,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
         MURA19[i]= result ? 1:0;
     }
 
-    //
+    //准直器单元
     G4Box* solidMaskUnit = new G4Box("solidMaskUnit",mask_xy/2,mask_xy/2,mask_z/2);
     G4LogicalVolume* LogicalMaskUnit = new G4LogicalVolume(solidMaskUnit,WCumat,"LogicalMaskUnit");
     G4double mask_z = (Bgo_z/2)+MDD+(mask_z/2);
