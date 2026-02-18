@@ -15,5 +15,5 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
-    
+    delete fGPS;
 }
