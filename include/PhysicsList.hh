@@ -8,6 +8,8 @@ class PhysicsList : public G4VModularPhysicsList
 public:
     PhysicsList();
     ~PhysicsList() override;
+
+    void SetCuts() override;
 };
 
 #endif
