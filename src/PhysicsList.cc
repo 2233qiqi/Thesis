@@ -17,5 +17,14 @@ PhysicsList :: PhysicsList()
     RegisterPhysics(new G4NeutronTrackingCut());
     RegisterPhysics(new G4StoppingPhysics());
 
+}
 
+PhysicsList :: ~PhysicsList()
+{
+
+}
+
+void PhysicsList :: SetCuts()
+{
+    G4VUserPhysicsList::SetCuts();
 }
