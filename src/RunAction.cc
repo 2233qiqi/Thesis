@@ -16,3 +16,7 @@ RunAction :: ~RunAction()
     delete G4AnalysisManager :: Instance();
 }
     
+void BeginOfRunAction(const G4Run* anRun)
+{
+    
+}
