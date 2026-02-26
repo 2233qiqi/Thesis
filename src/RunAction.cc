@@ -10,3 +10,9 @@ RunAction :: RunAction() : G4UserRunAction()
     analysisManager->SetVerboseLevel(1);
     analysisManager->SetDefaultFileType("root");
 }
+
+RunAction :: ~RunAction()
+{
+    delete G4AnalysisManager :: Instance();
+}
+    
