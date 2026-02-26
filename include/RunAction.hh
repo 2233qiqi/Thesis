@@ -5,6 +5,15 @@
 #include "globals.hh"
 
 class G4Run;
+class RunAction : public G4UserRunAction
+{
+    public:
+       RunAction();
+       virtual ~RunAction();
+       void BeginOfRunAction(const G4Run* asnRun);
+       void EndOfRunAction(const G4Run* anRun);
+    private:
+    
 
-
-#endif
+}
+#endiff
