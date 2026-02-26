@@ -14,5 +14,15 @@ SteppingAction::~SteppingAction()
 
 void SteppingAction :: UserSteppingAction(const G4Step* step)
 {
-    
+     G4VPhysicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume();
+    if (!volume) return;
+    if (volume->GetName() == "BGOCrystal") 
+    {
+         G4double edep = step->GetTotalEnergyDeposit();
+
+        if (edep > 0.) {
+            G4int copyNo = step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber();
+            fEventAction->AddEnergy(copyNo, edep);
+        }
+    }
 }
