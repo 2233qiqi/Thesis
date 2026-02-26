@@ -10,5 +10,23 @@ EvenAction :: EvenAction() : G4UserEventAction()
 
 EvenAction :: ~EvenAction()
 {
-    
+
+}
+
+void EvenAction ::BeginOfEventAction(const G4Event* anEvent)
+{
+    fCrystalEdep.clear();
+}
+
+void EvenAction :: EndOfEventAction(const G4Event* anEvent)
+{
+    G4AnalysisManager* analysisManager = G4AnalysisManager :: Instance();
+
+    for (auto const&crystal : fCrystalEdep)
+    {
+        if (edep>0)
+        {
+            
+        }
+    }
 }
