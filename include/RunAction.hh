@@ -12,8 +12,6 @@ class RunAction : public G4UserRunAction
        virtual ~RunAction();
        void BeginOfRunAction(const G4Run* asnRun);
        void EndOfRunAction(const G4Run* anRun);
-    private:
-    
 
 };
 #endif
