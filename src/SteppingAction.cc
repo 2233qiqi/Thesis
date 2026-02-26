@@ -20,7 +20,8 @@ void SteppingAction :: UserSteppingAction(const G4Step* step)
     {
          G4double edep = step->GetTotalEnergyDeposit();
 
-        if (edep > 0.) {
+        if (edep > 0.)
+        {
             G4int copyNo = step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber();
             fEventAction->AddEnergy(copyNo, edep);
         }
