@@ -12,6 +12,9 @@ public:
     virtual ~SteppingAction();
     void UserSteppingAction (const G4Step* step);
 
+private:
+    EventAction* fEventAction;
+
 };
 
 
