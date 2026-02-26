@@ -18,5 +18,7 @@ RunAction :: ~RunAction()
     
 void BeginOfRunAction(const G4Run* anRun)
 {
-    
+    auto analysisManager = G4AnalysisManager :: Instance();
+
+    analysisManager->OpenFile("CodedAperture.root");
 }
