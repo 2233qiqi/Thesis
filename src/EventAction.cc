@@ -26,7 +26,9 @@ void EvenAction :: EndOfEventAction(const G4Event* anEvent)
     {
         if (edep>0)
         {
-            
+            analysisManager->FillNtupleIColumn(0, id);   
+            analysisManager->FillNtupleDColumn(1, edep); 
+            analysisManager->AddNtupleRow();
         }
     }
 }
