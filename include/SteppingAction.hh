@@ -4,5 +4,17 @@
 #include "G4UserSteppingAction.hh"
 #include "globals.hh"
 
+class EventAction;
+class SteppingAction : public G4UserSteppingAction
+{
+public:
+    SteppingAction(EvenAction* eventAction);
+    virtual ~SteppingAction();
+    void UserSteppingAction (const G4Step* step);
+
+};
+
+
+
 
 #endif
