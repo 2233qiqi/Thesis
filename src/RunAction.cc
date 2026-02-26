@@ -5,6 +5,8 @@
 
 RunAction :: RunAction() : G4UserRunAction()
 {
-    auto analysisMannager = G4AnalysisManager::Instance();
-    analysisMannager->SetDefaultFileType("root");
+    auto analysisManager = G4AnalysisManager::Instance();
+
+    analysisManager->SetVerboseLevel(1);
+    analysisManager->SetDefaultFileType("root");
 }
