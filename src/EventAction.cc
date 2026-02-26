@@ -22,9 +22,9 @@ void EvenAction :: EndOfEventAction(const G4Event* anEvent)
 {
     G4AnalysisManager* analysisManager = G4AnalysisManager :: Instance();
 
-    for (auto const&crystal : fCrystalEdep)
+    for (auto const&[id,edep] : fCrystalEdep)
     {
-        if (edep>0)
+        if (edep>0.)
         {
             analysisManager->FillNtupleIColumn(0, id);   
             analysisManager->FillNtupleDColumn(1, edep); 
