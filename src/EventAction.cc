@@ -3,22 +3,22 @@
 #include "G4Event.hh"
 #include "G4AnalysisManager.hh"
 
-EvenAction :: EvenAction() : G4UserEventAction()
+EventAction :: EventAction() : G4UserEventAction()
 {
 
 }
 
-EvenAction :: ~EvenAction()
+EventAction :: ~EventAction()
 {
 
 }
 
-void EvenAction ::BeginOfEventAction(const G4Event* anEvent)
+void EventAction ::BeginOfEventAction(const G4Event* anEvent)
 {
     fCrystalEdep.clear();
 }
 
-void EvenAction :: EndOfEventAction(const G4Event* anEvent)
+void EventAction :: EndOfEventAction(const G4Event* anEvent)
 {
     G4AnalysisManager* analysisManager = G4AnalysisManager :: Instance();
 
