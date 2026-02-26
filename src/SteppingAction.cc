@@ -16,7 +16,7 @@ void SteppingAction :: UserSteppingAction(const G4Step* step)
 {
      G4VPhysicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume();
     if (!volume) return;
-    if (volume->GetName() == "LogicalBgo") 
+    if (volume->GetName() == "PhysicalBgo") 
     {
          G4double edep = step->GetTotalEnergyDeposit();
 
