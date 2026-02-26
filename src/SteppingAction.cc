@@ -5,3 +5,9 @@
 SteppingAction :: SteppingAction(EventAction* eventAction): G4UserSteppingAction(), fEventAction(eventAction)
 {
 }
+
+SteppingAction::~SteppingAction()
+{
+
+    
+}
