@@ -3,3 +3,12 @@
 #include "G4Event.hh"
 #include "G4AnalysisManager.hh"
 
+EvenAction :: EvenAction() : G4UserEventAction()
+{
+
+}
+
+EvenAction :: ~EvenAction()
+{
+    
+}
