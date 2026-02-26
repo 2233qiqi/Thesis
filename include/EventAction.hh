@@ -5,11 +5,11 @@
 #include "globals.hh"
 #include <vector>
 
-class EvenAction : public G4UserEventAction
+class EventAction : public G4UserEventAction
 {
     public: 
-    EvenAction();
-    virtual ~EvenAction();
+    EventAction();
+    virtual ~EventAction();
 
     virtual void BeginOfEventAction(const G4Event* anEvent);
     virtual void EndOfEventAction(const G4Event* anEvent);

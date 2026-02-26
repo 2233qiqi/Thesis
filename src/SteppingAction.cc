@@ -14,7 +14,7 @@ SteppingAction::~SteppingAction()
 
 void SteppingAction :: UserSteppingAction(const G4Step* step)
 {
-     G4VPhysicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume();
+    G4VPhysicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume();
     if (!volume) return;
     if (volume->GetName() == "PhysicalBgo") 
     {
