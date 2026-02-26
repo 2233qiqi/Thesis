@@ -3,6 +3,7 @@
 
 #include "G4UserSteppingAction.hh"
 #include "globals.hh"
+#include "EventAction.hh"
 
 class EventAction;
 class SteppingAction : public G4UserSteppingAction
