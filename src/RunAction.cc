@@ -21,4 +21,8 @@ void BeginOfRunAction(const G4Run* anRun)
     auto analysisManager = G4AnalysisManager :: Instance();
 
     analysisManager->OpenFile("CodedAperture.root");
+    analysisManager->CreateNtuple("Hits", "Crystal Edep Data");
+    analysisManager->CreateNtupleIColumn("CrystalID"); 
+    analysisManager->CreateNtupleDColumn("Edep");      
+    analysisManager->FinishNtuple();
 }
