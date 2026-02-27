@@ -1,11 +1,14 @@
-#/run/numberOfThreads 8
-
 /run/initialize
 
-/analysis/setFileName CodedAperture_Study
+/gps/particle gamma
 
-/gun/particle gamma
-/gun/energy 122 keV
-/gun/position 0 0 2068 mm
+/gps/pos/type Point
+/gps/pos/centre 0 0 180.5 mm
+#/gps/direction 0 0 -1
+/gps/energy 1.408 MeV
 
-/run/beamOn 100000
+/gps/ang/type iso
+
+
+
+/run/beamOn 1000000

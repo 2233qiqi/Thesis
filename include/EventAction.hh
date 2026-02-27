@@ -3,7 +3,7 @@
 
 #include "G4UserEventAction.hh"
 #include "globals.hh"
-#include <vector>
+#include <map>  
 
 class EventAction : public G4UserEventAction
 {
