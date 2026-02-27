@@ -17,3 +17,8 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
     delete fGPS;
 }
+
+void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
+{
+    fGPS->GeneratePrimaryVertex(anEvent);
+}

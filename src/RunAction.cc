@@ -16,7 +16,7 @@ RunAction :: ~RunAction()
     delete G4AnalysisManager :: Instance();
 }
     
-void BeginOfRunAction(const G4Run* anRun)
+void RunAction::BeginOfRunAction(const G4Run* anRun)
 {
     auto analysisManager = G4AnalysisManager :: Instance();
 
@@ -27,7 +27,7 @@ void BeginOfRunAction(const G4Run* anRun)
     analysisManager->FinishNtuple();
 }
 
-void EndOfRunAction(const G4Run* anRun)
+void RunAction :: EndOfRunAction(const G4Run* anRun)
 {
     auto analysisManager = G4AnalysisManager :: Instance();
 
