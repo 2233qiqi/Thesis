@@ -56,8 +56,9 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     //MURA准直器
     G4int p = 19;
     G4double mask_xy = 2.4*mm;
+    G4double mask_thickness = 8.0 * mm;
     G4double MDD = 59*mm;
-    G4double mask_z = (Bgo_z/2)+MDD+(mask_z/2);
+    G4double mask_z = (Bgo_z/2)+MDD+(mask_thickness/2);
 
 
     //MURA图案
