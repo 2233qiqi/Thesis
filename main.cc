@@ -18,6 +18,7 @@ int main(int argc, char** argv)
     auto* visManager = new G4VisExecutive;
     visManager->Initialize();
 
+    
     auto* ui = new G4UIExecutive(argc, argv);
 
     auto* UImanager = G4UImanager::GetUIpointer();
